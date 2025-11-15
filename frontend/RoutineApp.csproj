@@ -61,10 +61,10 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.10" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
 		<PackageReference Include="pythonnet" Version="3.0.5" />
-		<PackageReference Include="System.Private.Uri" Version="4.3.0" />
+		<PackageReference Include="System.Private.Uri" Version="4.3.2" />
 	</ItemGroup>
 
 </Project>
