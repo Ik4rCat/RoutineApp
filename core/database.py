@@ -1,5 +1,3 @@
-# core/database.py
-
 import sqlite3
 from typing import List, Optional
 from .models import Task
@@ -30,7 +28,7 @@ class TodoDatabase:
                 "INSERT INTO tasks (title, description, completed) VALUES (?, ?, ?)",
                 (title, description, False)
             )
-            return cursor.lastrowid # type: ignore
+            return cursor.lastrowid
 
     def get_all_tasks(self) -> List[Task]:
         with self.get_connection() as conn:

@@ -1,5 +1,3 @@
-# main_cli.py
-
 from core.database import TodoDatabase
 from core.models import Task
 

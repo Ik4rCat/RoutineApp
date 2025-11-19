@@ -1,5 +1,3 @@
-# main_gui.py
-
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.textinput import TextInput
@@ -11,7 +9,7 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.core.window import Window
 from core.database import TodoDatabase
 
-Window.clearcolor = (1, 1, 1, 1)  # белый фон
+Window.clearcolor = (1, 1, 1, 1)
 
 class TaskItem(BoxLayout):
     def __init__(self, task, app_ref, **kwargs):
@@ -22,10 +20,8 @@ class TaskItem(BoxLayout):
         self.task = task
         self.app = app_ref
 
-        # === Верхняя строка: чекбокс + ТЕКСТОВЫЙ БЛОК + кнопка удаления ===
         top_row = BoxLayout(size_hint_y=None, height=40)
 
-        # Чекбокс слева
         self.checkbox = CheckBox(
             active=task.completed,
             size_hint_x=None,
@@ -33,7 +29,6 @@ class TaskItem(BoxLayout):
         )
         self.checkbox.bind(on_press=self.on_checkbox_toggle)
 
-        # Текстовый блок (заголовок + описание) — занимает всё оставшееся пространство
         text_container = BoxLayout(orientation='vertical')
         
         self.title_label = Label(
@@ -46,7 +41,6 @@ class TaskItem(BoxLayout):
         )
         self.title_label.bind(size=self.title_label.setter('text_size'))
 
-        # Описание — тоже слева, с небольшим отступом
         self.desc_label = Label(
             text=task.description if task.description else "",
             halign='left',
@@ -61,7 +55,6 @@ class TaskItem(BoxLayout):
         if task.description:
             text_container.add_widget(self.desc_label)
 
-        # Кнопка удаления справа
         delete_btn = Button(
             text="Удалить",
             size_hint_x=None,
@@ -71,7 +64,6 @@ class TaskItem(BoxLayout):
             background_color=(1, 1, 1, 1)
         )
 
-        # Собираем строку
         top_row.add_widget(self.checkbox)
         top_row.add_widget(text_container)
         top_row.add_widget(delete_btn)
@@ -93,7 +85,6 @@ class TodoApp(App):
 
         layout = BoxLayout(orientation='vertical', padding=10, spacing=10)
 
-        # Ввод заголовка и описания
         self.title_input = TextInput(
             hint_text="Заголовок задачи",
             multiline=False,
@@ -125,7 +116,6 @@ class TodoApp(App):
         input_box.add_widget(self.desc_input)
         input_box.add_widget(add_btn)
 
-        # Список задач
         self.task_list = GridLayout(cols=1, size_hint_y=None, spacing=5)
         self.task_list.bind(minimum_height=self.task_list.setter('height'))
         scroll = ScrollView()
