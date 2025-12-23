@@ -23,4 +23,4 @@ from Nulllev (aka b.d.s.m.) with <3
 
 Download files:
 
-[Download presentation](https://github.com/Ik4rCat/RoutineApp/blob/main/Presentation.pptx)
+[Download presentation](https://raw.githubusercontent.com/Ik4rCat/RoutineApp/main/Presentation.pptx)
