@@ -21,6 +21,6 @@ You can download fresh version of program from [Releases](https://github.com/Ik4
 
 from Nulllev (aka B.D.S.M.) with <3
 
-Download files:
+Download files (made by [@gkfosl](https://github.com/gkfosl) with <3):
 
 [Download presentation](https://raw.githubusercontent.com/Ik4rCat/RoutineApp/main/Presentation.pptx)
