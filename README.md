@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icon2.png" alt="Project banner" style="max-width:100%;">
+  <img src="todo_app/assets/banner.png" alt="Project banner" style="max-width:100%;">
 </p>
 
 
