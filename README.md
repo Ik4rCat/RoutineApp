@@ -1,3 +1,5 @@
+<img src="icon.png" width="350">
+
 # Routine App 
 - RoutineApp - day tasks app with sqlite data base
 
