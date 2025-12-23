@@ -1,57 +1,65 @@
 @echo off
-REM Скрипт запуска Менеджера задач
+chcp 65001 >nul
+
+if defined PROMPT (
+    for /f "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
+        set "DEL=%%a"
+    )
+)
+
+REM Task Manager launch script
 
 echo ==========================================
-echo   Запуск Менеджера задач
+echo   Launching Task Manager
 echo ==========================================
 echo.
 
-REM Проверка наличия Python
+REM Checking for Python installation
 where python >nul 2>nul
 if %errorlevel% neq 0 (
-    echo ❌ Python не найден!
-    echo Пожалуйста, установите Python 3.7 или выше
+    echo ❌ Python not found!
+    echo Please install Python 3.7 or higher
     echo.
     pause
     exit /b 1
 )
 
-REM Показываем версию Python
-echo ✓ Найден Python:
+REM Showing Python version
+echo ✓ Python found:
 python --version
 echo.
 
-REM Проверка наличия tkcalendar
-echo 🔍 Проверка зависимостей...
+REM Checking for tkcalendar
+echo 🔍 Checking dependencies...
 python -c "import tkcalendar" >nul 2>nul
 if %errorlevel% neq 0 (
-    echo ⚠️  tkcalendar не установлен
-    echo 📦 Устанавливаем tkcalendar для виджета календаря...
+    echo ⚠️  tkcalendar not installed
+    echo 📦 Installing tkcalendar for calendar widget...
     python -m pip install tkcalendar
     if %errorlevel% equ 0 (
-        echo ✓ tkcalendar установлен успешно
+        echo ✓ tkcalendar installed successfully
     ) else (
-        echo ⚠️  Не удалось установить tkcalendar
-        echo    Календарь не будет работать, но приложение запустится
-        echo    Установите вручную: pip install tkcalendar
+        echo ⚠️  Failed to install tkcalendar
+        echo    Calendar won't work, but the application will start
+        echo    Install manually: pip install tkcalendar
     )
 ) else (
-    echo ✓ tkcalendar установлен
+    echo ✓ tkcalendar is installed
 )
 echo.
 
-REM Переходим в директорию приложения
+REM Changing to application directory
 cd /d "%~dp0todo_app"
 
-REM Запускаем приложение
-echo 🚀 Запуск приложения...
+REM Launching the application
+echo 🚀 Launching application...
 echo.
 python main_gui.py
 
-REM Если возникла ошибка
+REM If an error occurred
 if %errorlevel% neq 0 (
     echo.
-    echo ❌ Произошла ошибка при запуске приложения
+    echo ❌ An error occurred while launching the application
     echo.
     pause
 )
