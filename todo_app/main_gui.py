@@ -94,7 +94,7 @@ class CalendarDialog(tk.Toplevel):
             # Если tkcalendar не установлен, показываем простое сообщение
             label = tk.Label(
                 self,
-                text="📅 tkcalendar не установлен\n\nУстановите: pip install tkcalendar",
+                text="tkcalendar не установлен\n\nУстановите: pip install tkcalendar",
                 bg=COLORS["bg_dark"],
                 fg=COLORS["warning"],
                 font=("Segoe UI", 11),
@@ -786,7 +786,7 @@ class ManageCategoriesDialog(tk.Toplevel):
 
 
 class ModernButton(tk.Button):
-    """Современная кнопка с эффектом наведения"""
+    """Кнопка с эффектом наведения"""
 
     def __init__(
         self,
