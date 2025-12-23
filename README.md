@@ -1,4 +1,7 @@
-<img src="icon.png" width="350">
+<p align="center">
+  <img src="icon2.png" alt="Project banner" style="max-width:100%;">
+</p>
+
 
 # Routine App 
 - RoutineApp - day tasks app with sqlite data base
