@@ -26,3 +26,6 @@ from Nulllev (aka B.D.S.M.) with <3
 
 [Download Presentation](https://raw.githubusercontent.com/Ik4rCat/RoutineApp/main/Presentation.pptx)
 [Download Documentation](https://raw.githubusercontent.com/Ik4rCat/RoutineApp/main/Documentation.docx)
+
+##### The project was assessed by our teacher. 
+- ★★★★☆
