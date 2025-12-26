@@ -24,10 +24,14 @@ You can download fresh version of program from [Releases](https://github.com/Ik4
 
 from Nulllev (aka B.D.S.M.) with <3
 
+---
+
 ### Download files (made by [@gkfosl](https://github.com/gkfosl) with <3):
 
 [Download Presentation.pptx](https://raw.githubusercontent.com/Ik4rCat/RoutineApp/main/Presentation.pptx)
 [Download Documentation.docx](https://raw.githubusercontent.com/Ik4rCat/RoutineApp/main/Documentation.docx)
+
+---
 
 ##### The project was assessed by our teacher. 
 - ★★★★☆
