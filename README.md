@@ -9,7 +9,10 @@
 
 You can download fresh version of program from [Releases](https://github.com/Ik4rCat/RoutineApp/releases)
 
-| **Technologies** | python, sqlite, tkinter, tkcalendar |
+| **Technologies** |
+|---|
+| python, sqlite, tkinter, tkcalendar |
+
 ---
 ## Authors
 
