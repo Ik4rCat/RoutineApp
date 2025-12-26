@@ -15,17 +15,18 @@ You can download fresh version of program from [Releases](https://github.com/Ik4
 ---
 ## Authors
 
-|   |   |   |   |
+| Project performance assessment | ★★★★☆ | ★★★★★ | ★★★★☆ |
 |---|---|---|---|
 | **Digital face** | <img src="https://avatars.githubusercontent.com/Ik4rCat" width="100" height="100" style="border-radius: 100%"> | <img src="https://avatars.githubusercontent.com/gkfosl" width="100" height="100" style="border-radius: 100%">  | <img src="https://avatars.githubusercontent.com/artitiam" width="100" height="100" style="border-radius: 100%"> |
 | **Names** | [@awsk](https://github.com/Ik4rCat) | [@gkfosl](https://github.com/gkfosl) | [@artitiam](https://github.com/artitiam) |
+| Work on the project | frontend part | presentation & <br> documentation | backend part |
 
 from Nulllev (aka B.D.S.M.) with <3
 
 ### Download files (made by [@gkfosl](https://github.com/gkfosl) with <3):
 
-[Download Presentation](https://raw.githubusercontent.com/Ik4rCat/RoutineApp/main/Presentation.pptx)
-[Download Documentation](https://raw.githubusercontent.com/Ik4rCat/RoutineApp/main/Documentation.docx)
+[Download Presentation.pptx](https://raw.githubusercontent.com/Ik4rCat/RoutineApp/main/Presentation.pptx)
+[Download Documentation.docx](https://raw.githubusercontent.com/Ik4rCat/RoutineApp/main/Documentation.docx)
 
 ##### The project was assessed by our teacher. 
 - ★★★★☆
