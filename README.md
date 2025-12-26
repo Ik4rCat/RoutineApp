@@ -2,6 +2,7 @@
   <img src="todo_app/assets/banner.png" alt="Project banner" style="max-width:100%;">
 </p>
 
+! image AI generated !
 
 # Routine App 
 - RoutineApp - day tasks app with sqlite data base
